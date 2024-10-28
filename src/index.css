@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link-active {
+    @apply flex justify-center items-center xl:justify-start text-blue-400;
+  }
+  .link {
+    @apply flex items-center justify-center xl:justify-start  text-white  mb-8 transition duration-150 ease-in-out hover:text-blue-400;
+  }
+  .icon {
+    @apply hidden xl:block xl:ml-2 font-bold;
+  }
+}
+
+@layer utilities {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border: 2px solid #374151;
+  }
+  ::-webkit-scrollbar-track {
+    background: #374151;
+  }
+}
